@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <style>
+        /* CSS untuk mempercantik layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Styling untuk bagian header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Logo di pojok kiri */
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px; /* Atur ukuran logo */
+        }
+
+        /* Menu navigasi */
+        nav {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* Styling untuk bagian konten utama */
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Bagian Tentang Saya */
+        .tentang-saya-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            text-align: left;
+        }
+
+        .tentang-saya-container img {
+            width: 300px;
+            height: 300px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .tentang-saya-container .text{
+            flex: 1;
+            text-align: justify;
+        }
+
+
+        /* Sub-bagian Tentang Saya */
+        .sub-bagian {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f5e9;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .sub-bagian h3 {
+            color: #4CAF50;
+        }
+
+        .sub-bagian p {
+            margin-bottom: 10px;
+        }
+
+        /* Bagian Portofolio */
+        .portofolio-images {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .portofolio-images img {
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #81C784;
+            color: #212121;
+            text-align: center;
+            padding: 2px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #212121;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsive design untuk mobile */
+        @media (max-width: 768px) {
+            .portofolio-images {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .portofolio-images img {
+                width: 80%;
+            }
+
+            /* Untuk desain mobile, tentang saya akan ditata dalam kolom */
+            .tentang-saya-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tentang-saya-container img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bagian Header -->
+    <header>
+        <img src="./img/th.jpeg" alt="Logo" class="logo"> <!-- Tambahkan logo -->
+        <h1>WELCOME TO MY PROFILE</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#tentang-saya">Tentang Saya</a>
+            <a href="#kontak">Kontak</a>
+            <a href="#portofolio">Portofolio</a>
+        </nav>
+    </header>
+
+    <!-- Bagian Konten Utama -->
+    <main>
+        <!-- Tentang Saya -->
+        <section id="tentang-saya">
+            <h2>Tentang Saya</h2>
+            <div class="tentang-saya-container">
+                <img src="./img/WhatsApp Image 2024-11-07 at 20.09.04_78f3c162.jpg" alt="Foto Saya">
+                <div class="text">
+                    <p>Halo, perkenalkan saya Siti Nurvatika. Saya lahir tanggal 31 juli 2005 dan sekarang berusia 19 tahun.Saya merupakan mahasiswa S-1 Jurusan Teknik Informatika di Universitas Tadulako. Saya berasal dari kota Poso, lebih tepatnya di desa Pandajaya, Kecamatan Pamona Selatan. Saya merupakan anak ke-4 dari 5 bersaudara.sejak kecil saya lebih sering melakukan kegiatan atau lomba yang berkaitan dengan keagamaan ataupun olimpiade. Saat SD saya sempat mengikuti lomba olimpiade matematika tingkat kabupaten. Selanjutnya saya juga mengikuti lomba FLS2N tingkat kabupaten dan juga provinsi.Saat SMP saya juga sering mengikuti lomba MTQ baik tingkat kabupaten maupun provinsi. Saat SMP saya juga sempat mengikuti organisasi OSIS dan menjabat sebagai ketua seksi Keagamaan. selain mengikuti lomba MTQ cabang tartil maupun tilawah, saya juga sempat mengikuti lomba MTQ cabang Syarhil Qur'an. </p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Portofolio -->
+        <section id="portofolio">   
+            <h2>Portofolio</h2>
+            <div class="portofolio-images">
+                <img src="./img/maxresdefault.jpg" alt="Proyek 1">
+                <img src="./img/maxresdefault (1).jpg" alt="Proyek 2">
+                <img src="./img/maxresdefault (2).jpg" alt="Proyek 3">
+            </div>
+        </section>
+    </main>
+
+    <!-- Bagian Footer -->
+    <footer>
+        <p>Hubungi saya melalui email: <a href="mailto:email@domain.com">sitinurvatika31@gmail.com</a></p>
+        <p>Ikuti saya di media sosial: 
+            <a href="https://facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </p>
+    </footer>
+
+</body>
+</html>
